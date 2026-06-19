@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
+
 <body>
   <header class="site-header" aria-label="Головна навігація">
     <a class="brand" href="#top">Vasyl Spaschuk</a>
@@ -17,6 +18,7 @@
       <a href="#bio">Біографія</a>
       <a href="#services">Послуги</a>
       <a href="#portfolio">Портфоліо</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Контакти</a>
     </nav>
   </header>
@@ -95,28 +97,79 @@
         <p class="section-kicker">Портфоліо</p>
         <h2>Фото страв</h2>
       </div>
-      <div class="gallery">
-        <img src="assets/p03-03.jpg" alt="" />
-        <img src="assets/p03-02.jpg" alt="" />
-        <img src="assets/p04-02.jpg" alt="" />
-        <img src="assets/p04-04.jpg" alt="" />
-        <img src="assets/p05-01.jpg" alt="" />
-        <img src="assets/p05-03.jpg" alt="" />
-        <img src="assets/p05-04.jpg" alt="" />
-        <img src="assets/p06-04.jpg" alt="" />
-        <img src="assets/p06-05.jpg" alt="" />
-        <img src="assets/p06-06.jpg" alt="" />
-        <img src="assets/01-02.jpeg" alt="" />
-        <img src="assets/01-03.jpeg" alt="" />
-        <img src="assets/01-06.jpeg" alt="" />
-      </div>
-      <div class="section-heading">
-        <h2>Фото десертів</h2>
+      <div class="gallery-filters" aria-label="Фільтр фото страв">
+        <button class="filter-btn is-active" type="button" data-filter="all">Усі</button>
+        <button class="filter-btn" type="button" data-filter="main">Основні</button>
+        <button class="filter-btn" type="button" data-filter="dessert">Десерти</button>
+        <button class="filter-btn" type="button" data-filter="banquet">Банкети</button>
       </div>
       <div class="gallery">
-        <img src="assets/01-04.jpeg" alt="" />
-        <img src="assets/01-05.jpeg" alt="" />
-        <img src="assets/01-07.jpeg" alt="" />
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p03-03.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p03-02.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p04-02.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p05-01.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p05-03.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p05-04.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p06-04.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p06-05.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/p06-06.jpg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-02.jpeg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-03.jpeg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-06.jpeg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/02-03.jpeg" alt="" data-category="main" />
+        </button>
+        <button class="gallery-item" type="button" data-category="banquet">
+          <img src="assets/p04-04.jpg" alt="" data-category="banquet" />
+        </button>
+        <button class="gallery-item" type="button" data-category="banquet">
+          <img src="assets/02-07.jpeg" alt="" data-category="banquet" />
+        </button>
+        <button class="gallery-item" type="button" data-category="banquet">
+          <img src="assets/02-06.jpeg" alt="" data-category="banquet" />
+        </button>
+        <button class="gallery-item" type="button" data-category="banquet">
+          <img src="assets/02-05.jpeg" alt="" data-category="banquet" />
+        </button>
+        <button class="gallery-item" type="button" data-category="banquet">
+          <img src="assets/02-04.jpeg" alt="" data-category="banquet" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-04.jpeg" alt="" data-category="dessert" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-05.jpeg" alt="" data-category="dessert" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/01-07.jpeg" alt="" data-category="dessert" />
+        </button>
+        <button class="gallery-item" type="button" data-category="dessert">
+          <img src="assets/02-08.jpeg" alt="" data-category="dessert" />
+        </button>
       </div>
     </section>
 
@@ -134,11 +187,128 @@
         <a href="https://www.instagram.com/_vasyliy_chef/" target="_blank" rel="noreferrer">Instagram</a>
       </div>
     </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-heading">
+        <p class="section-kicker">Питання</p>
+        <h2>Що часто уточнюють перед співпрацею</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Чи можна замовити тільки консультацію?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Так. Можна почати з консультації, щоб розібрати меню, процеси на кухні,
+              собівартість або підготовку до запуску.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Чи працюєте з банкетними меню?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Так. Можна розробити банкетні пропозиції під формат закладу, сезон,
+              бюджет і можливості команди.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Чи можна перезапустити вже існуючу кухню?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Так. Спочатку проводиться аудит: меню, процеси, команда, обладнання,
+              продукти та собівартість. Після цього формується план змін.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Скільки часу займає розробка меню?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Це залежить від кількості позицій, формату закладу і задачі. Найкраще
+              обговорити обсяг роботи після короткого знайомства.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="request-section" id="request">
+      <div class="section-heading">
+        <p class="section-kicker">Заявка</p>
+        <h2>Коротко опишіть задачу</h2>
+      </div>
+
+      <form class="telegram-form">
+        <label>
+          Ваше ім’я
+          <input type="text" name="name" placeholder="Наприклад, Владислава" />
+        </label>
+
+        <label>
+          Назва закладу
+          <input type="text" name="place" placeholder="Ресторан, кафе або проєкт" />
+        </label>
+
+        <label>
+          Місто
+          <input type="text" name="city" placeholder="Наприклад, Ужгород" />
+        </label>
+
+        <label>
+          Що потрібно?
+          <select name="service">
+            <option value="Консультація">Консультація</option>
+            <option value="Розробка меню">Розробка меню</option>
+            <option value="Аудит кухні">Аудит кухні</option>
+            <option value="Банкетне меню">Банкетне меню</option>
+            <option value="Перезапуск кухні">Перезапуск кухні</option>
+            <option value="Супровід запуску">Супровід запуску</option>
+          </select>
+        </label>
+
+        <label>
+          Деталі
+          <textarea name="details" rows="4" placeholder="Коротко опишіть, з чим потрібна допомога"></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Надіслати в Telegram</button>
+      </form>
+    </section>
+
   </main>
 
   <footer>
     <p>Vasyl Spaschuk - Chef Consultant / Brand Chef</p>
   </footer>
+
+  <div class="lightbox" aria-label="Перегляд фото">
+    <button class="lightbox-close" type="button" aria-label="Закрити фото">×</button>
+    <img src="" alt="" />
+  </div>
+
+  <a class="floating-telegram" href="tg://resolve?phone=380979161944" aria-label="Написати в Telegram">
+    Telegram
+  </a>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
